@@ -1,0 +1,12 @@
+#What do i need ?
+1. an input text what will let you choose the number of the grid size (with a label and input)
+2.a square grid 
+3.reset button
+
+#How to plan:
+1.First i need to create a grid with the size of the n(grid size). #
+2.Every grid element has to have a number but it has to come in pairs.#
+The number of the pairs will be given by Formula:(n*2):2 #
+3.All the pairs has to be randomly placed on grids # 
+4.Click colours -> when i click one element, it must be colored in blue along with the second one. If the numbers are matching the color will be green and if not, the blue color will reset.
+5.if the second grid clicked is matching the first one, the green colors will pe permamently displayed on the screen.

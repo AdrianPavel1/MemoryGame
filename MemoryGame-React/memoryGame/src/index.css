@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(./background.jpg) center / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Old West", serif;
+  color: #663300;
+}
+
+.notDisplayed {
+  display: none;
+}
+.game-container {
+  width: 90vw;
+  height: 95vh;
+  background-color: rgba(165, 42, 42, 0.468);
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(42, 42, 42, 0.9) 0 8px 24px;
+  text-align: center;
+  overflow: hidden;
+  color: #ffe4c4;
+  border: 4px solid #8b4513;
+}
+
+.grid-main {
+  background-color: rgba(240, 222, 173, 0.474);
+  width: 95%;
+  height: 75%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #4b2e1f;
+  border: 2px solid #8b4513;
+}
+
+.refreshButton {
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: transparent;
+  color: wheat;
+  border: 2px solid rgb(193, 144, 8);
+  font-weight: bold;
+  padding: 10px;
+}
+.refreshButton:hover {
+  cursor: pointer;
+  border: 2px solid wheat;
+}
+.refreshButton:active {
+  color: rgb(193, 144, 8);
+}
+
+.grid-form {
+  margin: 20px 0 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.grid-form label {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Old West", serif;
+  color: #4b2e1f;
+}
+
+.grid-form select {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid #8b4513;
+  border-radius: 5px;
+  background: #ffe4c4;
+  color: #4b2e1f;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid-form select:hover {
+  background: #f5deb3;
+}
+
+.grid-container {
+  min-width: 200px;
+  width: auto;
+  height: auto;
+  background-color: #8b4513;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+  border: 2px solid #4b2e1f;
+}
+
+.grid-item {
+  background-color: #cd853f;
+  color: transparent;
+  text-shadow: 0 0 0 transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8b4513;
+  aspect-ratio: 1 / 1;
+  font-size: 2em;
+  font-family: "Old West", serif;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.grid-item.match {
+  background-color: #daa520;
+  pointer-events: none;
+  color: white;
+}
+
+.grid-item.disabled {
+  background-color: #deb887;
+  pointer-events: none;
+  color: white;
+}
+
+.finalMessage p:first-of-type {
+  font-size: 1.2em;
+}
+
+.finalMessage p:nth-of-type(2) {
+  font-size: 0.8em;
+}
